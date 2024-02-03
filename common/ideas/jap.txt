@@ -12,19 +12,15 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                hidden_modifier = {
-                    land_doctrine_cost_factor = 2.00
-                    naval_doctrine_cost_factor = 2.00
-                    air_doctrine_cost_factor = 2.00
-                    experience_gain_army_factor = -0.20
-                    experience_gain_navy_factor = -0.20
-                    experience_gain_air_factor = -0.20
-                }
                 stability_factor = 0.05
                 political_power_gain = 0.10
-                custom_modifier_tooltip = jap_all_doctrine_up_tt
-                custom_modifier_tooltip = jap_all_gain_exp_down_tt
                 command_power_gain_mult = -0.20
+                land_doctrine_cost_factor = 2.00
+                naval_doctrine_cost_factor = 2.00
+                air_doctrine_cost_factor = 2.00
+                experience_gain_army_factor = -0.20
+                experience_gain_navy_factor = -0.20
+                experience_gain_air_factor = -0.20
             }
         }
 
@@ -39,14 +35,11 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                war_support_factor = -0.20
-                stability_factor = -0.50
-                custom_modifier_tooltip = jap_all_law_cost_tt
-                hidden_modifier = {
-                    mobilization_laws_cost_factor = -0.20
-                    trade_laws_cost_factor = -0.20
-                    economy_cost_factor = -0.20
-                }
+                stability_factor = -0.20
+                war_support_factor = -0.50
+                mobilization_laws_cost_factor = -0.20
+                trade_laws_cost_factor = -0.20
+                economy_cost_factor = -0.20
             }
         }
 
@@ -201,6 +194,93 @@ ideas = {
             modifier = {
                 political_power_gain = 0.10
                 trade_opinion_factor = -0.20
+            }
+        }
+
+        JAP_uncontrollable_demonstration = { #통제할 수 없는 시위
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                war_support_factor = -0.40
+                stability_factor = -0.20
+                consumer_goods_factor = 0.15
+            }
+        }
+
+        JAP_keep_the_words = { #이행되는 개혁안들
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.10
+                war_support_factor = -0.30
+                mobilization_laws_cost_factor = -0.20
+                trade_laws_cost_factor = -0.20
+                economy_cost_factor = -0.20
+            }
+        }
+
+        JAP_revolutionary_era = { #개혁의 시대!
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                mobilization_laws_cost_factor = -0.20
+                trade_laws_cost_factor = -0.20
+                economy_cost_factor = -0.20
+            }
+        }
+
+        JAP_coalition_government_idea = { #연정
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = 0.05
+            }
+        }
+
+        JAP_emergency_relief = { #긴급 구제
+
+            picture = jap_militarism_showa
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = -0.30
+                production_speed_buildings_factor = -0.30
+                consumer_goods_factor = 0.20
+            }
+        }
+
+        JAP_money_receiving_army = { #힘을 얻는 군대
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.05
+                political_power_gain = 0.10
+                command_power_gain_mult = -0.20
+                land_doctrine_cost_factor = 2.00
+                naval_doctrine_cost_factor = 2.00
+                air_doctrine_cost_factor = 2.00
+                experience_gain_army_factor = -0.10
+                experience_gain_navy_factor = -0.10
+                experience_gain_air_factor = -0.10
+            }
+        }
+
+        JAP_democratic_army = { #민주적인 군대
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.10
+                political_power_gain = 0.05
+                command_power_gain_mult = -0.20
+                land_doctrine_cost_factor = 2.00
+                naval_doctrine_cost_factor = 2.00
+                air_doctrine_cost_factor = 2.00
+                experience_gain_army_factor = -0.10
+                experience_gain_navy_factor = -0.10
+                experience_gain_air_factor = -0.10
             }
         }
     }
