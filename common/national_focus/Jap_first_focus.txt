@@ -35,7 +35,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_years_greeting
 		completion_reward = {
-			#이벤트 발생 (커져가는 갈등)
+			#이벤트 발생 (불만 잠재우기)
 			add_stability = -0.10
 		}
 	}
@@ -102,7 +102,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_final_inspection
 		completion_reward = {
-			#이벤트 발생 (한미일경제회담)
+			country_event = JAP_event.1
 		}
 	}
 
@@ -117,7 +117,7 @@ focus_tree = {
 			has_country_flag = JAP_kyoto_terrorist_attack_flag
 		}
 		completion_reward = { 
-			#이벤트 발생(교토에 선언된 계엄령)
+			country_event = JAP_event.2
 		}
 	}
 
@@ -209,7 +209,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_amend_the_constitution
 		completion_reward = { 
-			#이벤트 발생(총선의 결과)
+			country_event = JAP_event.3
 		}
 	}
 	focus = { #개혁파의 승리!
@@ -563,7 +563,6 @@ focus_tree = {
 				days = 180
 			}
 			custom_effect_tooltip = on_JAP_administrative_reform_idea_removed_tt
-			#이벤트 발생(행정개혁의 끝)
 			add_to_variable = {
 				JAP_government_led_economy_consumer_goods_factor = -0.03
 			}
@@ -665,7 +664,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_coalition_government
 		completion_reward = { 
-			#이벤트 발생(긴급구제 표결)
+			country_event = JAP_event.4
 		}
 	}
 	focus = { #통과
